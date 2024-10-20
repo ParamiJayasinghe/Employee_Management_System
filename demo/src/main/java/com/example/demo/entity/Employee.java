@@ -1,14 +1,13 @@
-package com.example.demo.Entity;
-
-
+package com.example.demo.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.*;
+
 
 @Entity
 @Data
-
 public class Employee {
 
     @Id
@@ -16,7 +15,9 @@ public class Employee {
     private long id;
     private String name;
     private String email;
-    private  String Phone;
+    private  String phone;
     private String department;
 
+    public Employee() {
+    }
 }
